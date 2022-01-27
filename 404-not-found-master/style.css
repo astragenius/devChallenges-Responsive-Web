@@ -151,6 +151,7 @@ footer {
 .footer-links:hover {
     text-decoration: underline;
 }
+
 @media (min-width: 900px) {
    
     .main {
