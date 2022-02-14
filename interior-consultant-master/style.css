@@ -150,7 +150,56 @@ a {
 
 /* Navigation Mobile (mobile-first) */
 
+.header {
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+.header a {
+    border: 1px solid var(--cl-text);
+    padding: 8px;
+    font-weight: normal;
+    text-transform: uppercase;
+}
 
 [aria-expanded="false"] {
     display: none;
 }
+
+
+.mobile-toggle {
+    position: relative;
+    width: 30px;
+    aspect-ratio: 1;
+    cursor: pointer;
+   
+    
+}
+
+.hamburger-menu,
+.hamburger-menu::before,
+.hamburger-menu::after {
+    position: absolute;
+    content: "";
+    width: 30px;
+    height: 3px;
+    background-color: white;
+    left: 0;
+    top: 5px;
+    
+}
+
+.hamburger-menu::before {
+    top: 10px;
+    left: 0;
+}
+
+.hamburger-menu::after {
+
+    top: 20px;
+    left: 0;
+}
+
+
