@@ -129,10 +129,10 @@ a {
 
 .wrapper {
     width: 90rem;
-    max-width: clamp(12rem, 90%, 90rem);
+    max-width: clamp(5rem, 90%, 90rem);
     position: relative;
     margin: 0 auto;
-    padding-inline: 1.5rem;
+    padding-inline: 1rem;
 }
 
 .btn-primary {
