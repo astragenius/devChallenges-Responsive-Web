@@ -66,26 +66,16 @@ This application/site was created as a submission to a [DevChallenges](https://d
 
 ## How To Use
 
-To clone and run this application, you'll need [Git](https://git-scm.com) and [Node.js](https://nodejs.org/en/download/) (which comes with [npm](http://npmjs.com)) installed on your computer. From your command line:
-
-```bash
-# Clone this repository
-$ git clone https://github.com/your-user-name/your-project-name
-
-# Install dependencies
-$ npm install
-
-# Run the app
-$ npm start
-```
 
 ## Acknowledgements
 
 <!-- This section should list any articles or add-ons/plugins that helps you to complete the project. This is optional but it will help you in the future. For exmpale -->
 
-- [Steps to replicate a design with only HTML and CSS](https://devchallenges-blogs.web.app/how-to-replicate-design/)
-- [Node.js](https://nodejs.org/)
-- [Marked - a markdown parser](https://github.com/chjj/marked)
+- [System Font Stack](https://css-tricks.com/snippets/css/system-font-stack/)
+- [Here is the Links to the repository](https://github.com/csstools/system-font-css)
+- [How to use @font-face to implement fonts](https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face)
+
+
 
 ## Contact
 
