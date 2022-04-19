@@ -8,7 +8,7 @@ h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp,
 small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
+u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
@@ -30,6 +30,10 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1;
+}
+img {
+  display: block;
+  max-width: 100%;
 }
 ol, ul {
 	list-style: none;
@@ -94,12 +98,41 @@ table {
   src: url(./fonts/PlayfairDisplay-Bold.ttf) format("truetype");
   font-weight: bold;
 }
-body {
-  font-family: 'System';
+
+/* Material icons */
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;  /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Support for IE. */
+  font-feature-settings: 'liga';
 }
 
-h1 {
-  font-family: 'Playfair Display';
-  font-weight: 300;
-  font-size: 50px;
+:root {
+
+  --black: #0000;
+  --grey1: #3333;
+  --grey2: #4f4f4f;
+  --grey3: #829292;
+  --grey4: #bdbdbd;
+
+  --orange: #f2994a;
+
 }
