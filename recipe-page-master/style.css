@@ -136,3 +136,17 @@ table {
   --orange: #f2994a;
 
 }
+
+/* utillity classes */
+.ff-playfair-normal {
+  font-family: 'Playfair Display';
+  font-weight: normal;
+}
+.ff-playfair-300 {
+  font-family: 'Playfair Display';
+  font-weight: 300;
+}
+.ff-playfair-bold {
+  font-family: 'Playfair Display';
+  font-weight: bold;
+}
