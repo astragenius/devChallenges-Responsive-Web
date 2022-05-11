@@ -138,6 +138,7 @@ table {
 }
 
 /* utillity classes */
+/* fonts */
 .ff-playfair-normal {
   font-family: 'Playfair Display';
   font-weight: normal;
@@ -150,3 +151,29 @@ table {
   font-family: 'Playfair Display';
   font-weight: bold;
 }
+
+.ff-monsterrat-200 {
+  font-family: 'Monsterrat';
+  font-weight: 200;
+}
+.ff-monsterrat-300 {
+  font-family: 'Monsterrat';
+  font-weight: 300;
+}
+.ff-monsterrat-regular {
+  font-family: 'Monsterrat';
+  font-weight: normal;
+}
+.ff-monsterrat-bold {
+  font-family: 'Monsterrat';
+  font-weight: bold;
+}
+
+/* Color */
+
+.fc-black { color: var(--black)};
+.fc-grey-dark { color: var(--grey1)};
+.fc-grey-brown { color: var(--grey2)};
+.fc-grey3 { color: var(--grey3)};
+.fc-grey4 { color: var(--grey4)}
+.bg-orange { background-color: var(--orange);}
