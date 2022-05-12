@@ -151,7 +151,6 @@ table {
   font-family: 'Playfair Display';
   font-weight: bold;
 }
-
 .ff-monsterrat-200 {
   font-family: 'Monsterrat';
   font-weight: 200;
@@ -177,3 +176,13 @@ table {
 .fc-grey3 { color: var(--grey3)};
 .fc-grey4 { color: var(--grey4)}
 .bg-orange { background-color: var(--orange);}
+
+
+/* wrapper class */
+.wrapper {
+  width: 90vw;
+  width: clamp(14rem, 90vw, 70rem);
+  margin-inline: auto;
+ 
+  position: relative;
+}
