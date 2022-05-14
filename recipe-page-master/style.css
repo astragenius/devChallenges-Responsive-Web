@@ -135,6 +135,12 @@ table {
 
   --orange: #f2994a;
 
+  --font-size-800: clamp(1.5rem, 1rem + 2vw , 3rem); /* 24px - 48px */
+
+  --font-size-500: clamp(0.875rem, 0.5rem + 2vw, 0.875rem) /* 14px - 16px */;
+
+  --font-size-400: clamp(0.75rem, 0.5rem + 2vw, 0.875rem) /* 12px - 14px */
+
 }
 
 /* utillity classes */
@@ -176,8 +182,12 @@ table {
 .fc-grey3 { color: var(--grey3)};
 .fc-grey4 { color: var(--grey4)}
 .bg-orange { background-color: var(--orange);}
+.fc-orange { color: var(--orange);}
 
-
+/* Font-size */
+.fs-800 { font-size: var(--font-size-800);} /* heading */
+.fs-500 { font-size: var(--font-size-500); } /* 14px - 16px */
+.fs-400 { font-size: var(--font-size-400); } /* 12px */
 /* wrapper class */
 .wrapper {
   width: 90vw;
@@ -185,4 +195,52 @@ table {
   margin-inline: auto;
  
   position: relative;
+}
+.flex {
+  display: flex;
+  
+}
+.flex-gap {
+  gap: 0.5em;
+}
+.flex-space-b {
+  justify-content: space-between;
+}
+.flex-align-start {
+  align-items: flex-start;
+}
+.flex-container > div {
+  display: flex;
+}
+
+
+
+
+
+/* Style sections */
+
+
+.instruction-section h2 {
+  font-size: 1.5rem;
+}
+.instruction-section > div {
+  margin-bottom: 1em;
+}
+
+.instruction-section p {
+  font-family: 'Monsterrat';
+  font-weight: normal;
+   
+}
+
+.instruction_count {
+  background-color: var(--orange);
+  color: white;
+  font-size: 1.5rem;
+  border-radius: 6px;
+  height: 36px;
+  aspect-ratio: 1;
+  display: grid;
+  place-items: center;
+  
 }
