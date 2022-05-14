@@ -81,6 +81,12 @@ table {
   src: url(./fonts/Montserrat-Bold.ttf) format("truetype");
   font-weight: bold;
 }
+@font-face {
+  font-family: 'Monsterrat';
+  src: url(./fonts/Montserrat-Italic.ttf) format('truetype');
+  font-weight: normal;
+  font-style: italic;
+}
 /* PlayfairDisplay */
 
 @font-face {
@@ -97,6 +103,12 @@ table {
   font-family: 'Playfair Display';
   src: url(./fonts/PlayfairDisplay-Bold.ttf) format("truetype");
   font-weight: bold;
+}
+@font-face {
+  font-family: 'Playfair Display';
+  src: url(./fonts/PlayfairDisplay-Italic.ttf) format('truetype');
+  font-weight: normal;
+  font-style: italic;
 }
 
 /* Material icons */
@@ -136,11 +148,11 @@ table {
   --orange: #f2994a;
 
   --font-size-800: clamp(1.5rem, 1rem + 2vw , 3rem); /* 24px - 48px */
-
+  --font-size-600: clamp(1.125rem, 0.6rem + 2vw, 1.5rem); /* 18px - 24px */
   --font-size-500: clamp(0.875rem, 0.5rem + 2vw, 0.875rem) /* 14px - 16px */;
-
-  --font-size-400: clamp(0.75rem, 0.5rem + 2vw, 0.875rem) /* 12px - 14px */
-
+  --font-size-400: clamp(0.75rem, 0.5rem + 2vw, 0.875rem) /* 12px - 14px */;
+  --font-size-300: clamp(0.625rem, 0.3rem + 2vw, 0.875rem) /* 10px -  14px*/;
+  --font-size-200: clamp(0.5rem, 0.3rem + 2vw, 0.625rem) /* 8px - 10px */
 }
 
 /* utillity classes */
@@ -156,6 +168,11 @@ table {
 .ff-playfair-bold {
   font-family: 'Playfair Display';
   font-weight: bold;
+}
+.ff-playfair-italic {
+  font-family: 'Playfair Display';
+  font-weight: normal;
+  font-style: italic;
 }
 .ff-monsterrat-200 {
   font-family: 'Monsterrat';
@@ -173,6 +190,11 @@ table {
   font-family: 'Monsterrat';
   font-weight: bold;
 }
+.ff-monsterrat-italic {
+  font-family: 'Monsterrat';
+  font-weight: normal;
+  font-style: italic;
+}
 
 /* Color */
 
@@ -186,8 +208,11 @@ table {
 
 /* Font-size */
 .fs-800 { font-size: var(--font-size-800);} /* heading */
+.fs-600 { font-size: var(--font-size-600);} /* 18px - 24px */
 .fs-500 { font-size: var(--font-size-500); } /* 14px - 16px */
 .fs-400 { font-size: var(--font-size-400); } /* 12px */
+.fs-300 { font-size: var(--font-size-300); }
+.fs-200 { font-size: var(--font-size-200); }
 /* wrapper class */
 .wrapper {
   width: 90vw;
@@ -213,12 +238,38 @@ table {
   display: flex;
 }
 
-
-
-
+.wrapper * + * {
+  margin-bottom: .5em;
+}
+h1,
+h2,
+h3 {
+  margin-top: 1.5em;
+  margin-bottom: 1em;
+} 
+header * + * {
+  margin-top: 1.5em;
+  
+}
 
 /* Style sections */
+.time-container {
+  margin-left: 0.4em;
+}
 
+input[type="checkbox"] {
+  margin-right: 0.5em;
+}
+
+.cheeseCakeImg {
+  border-radius: 12px;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+.ingredients-section {
+  line-height: 25px;
+}
 
 .instruction-section h2 {
   font-size: 1.5rem;
@@ -230,6 +281,7 @@ table {
 .instruction-section p {
   font-family: 'Monsterrat';
   font-weight: normal;
+  line-height: 24px;
    
 }
 
@@ -243,4 +295,16 @@ table {
   display: grid;
   place-items: center;
   
+}
+
+@media (min-width: 1440px) {
+
+  .time-section {
+    position: absolute;
+    left: 90%;
+
+  }
+  .section-flex {
+    flex-direction: column;
+  }
 }

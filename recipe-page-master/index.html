@@ -17,52 +17,55 @@
 
       <header>
         <h1 class="ff-playfair-bold fs-800">Cheesecake Recipe</h1>
-        <p class="fc-grey-brown ff-monsterrat-regular fs-400">Look no further for a creamy and ultra smooth classic cheesecake recipe! Paired with a buttery graham cracker crust, no one can deny its simple decadence. For the best results, bake in a water bath.</p>
+        <p class="fc-grey-brown ff-monsterrat-italic fs-400">Look no further for a creamy and ultra smooth classic cheesecake recipe! Paired with a buttery graham cracker crust, no one can deny its simple decadence. For the best results, bake in a water bath.</p>
       </header>
-       <div>
+       <div class="cheeseCakeImg">
          <img src="./photo1.png" alt="cheesecake">
        </div>
-       <section>
-         <div class="flex">
-           <span class="material-icons">restaurant_menu</span>
-           <div>
-             <p>Yields</p>
-             <p class="fc-orange">12 servings</p>
+       <section class="time-section">
+        <section>
+          <div class="flex">
+            <span class="material-icons">restaurant_menu</span>
+            <div class="time-container">
+              <p class="fs-200 ff-monsterrat-300 fc-grey4">Yields</p>
+              <p class="fc-orange fs-300 ff-monsterrat-regular">12 servings</p>
+            </div>
+          </div>
+        </section>
+        <section class="section-flex flex flex-space-b">
+          <div class="flex">
+            <span class="material-icons">schedule</span>
+            <div class="time-container">
+              <p class="fs-200 ff-monsterrat-300 fc-grey4">Prep Time</p>
+              <p class="fs-300 ff-monsterrat-regular fc-grey-dark">45 minutes</p>
+            </div>
+          </div>
+ 
+          <div class="flex">
+           <span class="material-icons">schedule</span>
+           <div class="time-container">
+             <p class="fs-200 ff-monsterrat-300 fc-grey4">Cook Time</p>
+             <p class="fs-300 ff-monsterrat-regular fc-grey-dark">1 hour</p>
            </div>
          </div>
-       </section>
-       <section class="flex flex-space-b">
+ 
          <div class="flex">
            <span class="material-icons">schedule</span>
-           <div>
-             <p>Prep Time</p>
-             <p>45 minutes</p>
+           <div class="time-container">
+             <p class="fs-200 ff-monsterrat-300 fc-grey4">Total Time</p>
+             <p class="fs-300 ff-monsterrat-regular fc-grey-dark">7,75 hours</p>
            </div>
          </div>
-
-         <div class="flex">
-          <span class="material-icons">schedule</span>
-          <div>
-            <p>Cook Time</p>
-            <p>1 hour</p>
-          </div>
-        </div>
-
-        <div class="flex">
-          <span class="material-icons">schedule</span>
-          <div>
-            <p>Total Time</p>
-            <p>7,75 hours</p>
-          </div>
-        </div>
-
+ 
+        </section>
        </section>
+       
 
        <section>
 
-          <header>
-            <h2 class="ff-playfair-bold">Ingredients</h2>
-            <h3 class="ff-playfair-normal">Graham Cracker Crust</h3>
+          <header class="ingredients-section">
+            <h2 class="ff-playfair-bold fs-600 fc-grey-dark">Ingredients</h2>
+            <h3 class="ff-playfair-italic fc-grey-dark">Graham Cracker Crust</h3>
           </header>
           <div class="flex-container fs-500 ff-monsterrat-regular">
             <div>
@@ -88,9 +91,9 @@
 
           
        </section>
-       <section>
+       <section class="ingredients-section">
          <header>
-           <h3>Cheesecake</h3>
+           <h3 class="ff-playfair-italic fc-grey-dark">Cheesecake</h3>
          </header>
          <div class="flex-container fs-500 ff-monsterrat-regular">
           <div>
@@ -141,7 +144,7 @@
        </section>
 
        <section class="instruction-section">
-         <h2>Instruction</h2>
+         <h2 class="fc-gray-dark">Instruction</h2>
          <div class="flex flex-gap flex-align-start">
            <div class="instruction_count">1</div>
            <p>Adjust the oven rack to the lower-middle position and preheat oven to 350°F (177°C).</p>
@@ -176,7 +179,7 @@
   </main>
 
   <footer class="wrapper">
-    <div>
+    <div class="flex">
       <p>Created by</p><a href="">astragenius</a> <p>-devChallenges.io</p>
     </div>
   </footer>
